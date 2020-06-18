@@ -40,6 +40,10 @@ int main(int argc, char *argv[]) {
     z[1] = z1;
     z[2] = z2;
 
+    // This gives compile error
+    // int sz = 4;
+    // char name[sz] = "Eric";
+
     printf("address of zp, %p\n", &zp); // address of pointer zp, hence different from &zp[0], similar with argv
     printf("address of zp[0], %p\n", &zp[0]); // same with (&z[0], z, zp, &z)
     printf("address of zp[1], %p\n", &zp[1]); // same with (&z[0], z, zp, &z)
